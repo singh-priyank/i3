@@ -39,15 +39,10 @@ bindsym $mod+p exec dmenu_run
 
 # User defined keys
 bindsym $mod+Escape exec "$HOME/.config/i3/locker.sh"
-bindsym Mod1+Control+m exec "amixer sset Master 10%-"
-bindsym Mod1+Control+l exec "amixer sset Master 10%+"
-bindsym Mod1+Control+n exec "mpc next"
-bindsym Mod1+Control+p exec "mpc prev"
-bindsym Mod1+Control+t exec "mpc toggle"
-bindsym Mod1+Control+d exec "$HOME/Scripts/mpc_manage.sh -d"
-bindsym Mod1+Control+a exec "$HOME/Scripts/mpc_manage.sh -a"
-bindsym Mod4+Control+n exec "tomboy --new-note"
-bindsym Mod4+Control+j exec "$HOME/Scripts/trigger_jackass.sh"
+bindsym Mod1+Control+m exec "amixer -c 1 sset Master 10%-"
+bindsym Mod1+Control+l exec "amixer -c 1 sset Master 10%+"
+bindsym Mod1+Control+b exec "light -A 10"
+bindsym Mod1+Control+d exec "light -U 10"
 
 
 # change focus
