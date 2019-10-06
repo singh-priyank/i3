@@ -45,12 +45,12 @@ bindsym $mod+p exec dmenu_run
 bindsym $mod+Escape exec "$HOME/.config/i3/locker.sh" 
 bindsym Mod1+Control+m exec "amixer -c 1 sset Master 10%-" 
 bindsym Mod1+Control+l exec "amixer -c 1 sset Master 10%+" 
-bindsym Mod1+Control+b exec "light -A 10" 
-bindsym Mod1+Control+d exec "light -U 10" 
 
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness 
-bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+bindsym Mod1+Control+b exec light -A 10 
+bindsym Mod1+Control+d exec light -U 10 
 
+bindsym XF86MonBrightnessUp exec light -A 10
+bindsym XF86MonBrightnessDown exec light -D 10 
 
 # change focus
 bindsym $mod+j focus down
